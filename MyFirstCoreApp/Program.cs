@@ -11,6 +11,7 @@ var app = builder.Build();
 //Middleware 1
 app.Run(async(HttpContext context) =>
 {
+    //Genrating response headers
     context.Response.Headers["MyKey"] = "Kry007";
     context.Response.Headers["Server"] = "Server007";
     context.Response.Headers["Content-Type"] = "text/html";
